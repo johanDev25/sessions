@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+
+      <div class="posts">
+        <% @posts.each do |post| %>
+        <div class="post clearfix">
+          <div class="post-details">
+            <span class="post-title"><%= link_to post.name, post %></span>
+            <span class="post-description"><%= post.body %></span>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
